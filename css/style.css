@@ -98,3 +98,11 @@ body {
     letter-spacing: 0.15em;
     text-transform: uppercase;
 }
+
+.show.hide::before {
+    content: 'hide';
+    color: #fff;
+    font-size: 0.6em;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
