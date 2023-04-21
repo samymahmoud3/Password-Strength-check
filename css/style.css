@@ -76,6 +76,66 @@ body {
     -o-transition: 0.5s;
 }
 
+.container.weak .strengthMeter::before {
+    width: 10%;
+    background: #f00;
+    filter: drop-shadow(0 0 5px #f00) drop-shadow(0 0 10px #f00) drop-shadow(0 0 20px #f00);
+    -webkit-filter: drop-shadow(0 0 5px #f00) drop-shadow(0 0 10px #f00) drop-shadow(0 0 20px #f00);
+}
+
+
+.container.medium .strengthMeter::before {
+    width: 60%;
+    background: #ffa500;
+    filter: drop-shadow(0 0 5px #ffa500) drop-shadow(0 0 10px #ffa500) drop-shadow(0 0 20px #ffa500);
+    -webkit-filter: drop-shadow(0 0 5px #ffa500) drop-shadow(0 0 10px #ffa500) drop-shadow(0 0 20px #ffa500);
+}
+
+
+.container.strong .strengthMeter::before {
+    width: 100%;
+    background: #0F0;
+    filter: drop-shadow(0 0 5px #0f0) drop-shadow(0 0 10px #0f0) drop-shadow(0 0 20px #0f0);
+    -webkit-filter: drop-shadow(0 0 5px #0f0) drop-shadow(0 0 10px #0f0) drop-shadow(0 0 20px #0f0);
+}
+
+
+.container .strengthMeter::after {
+    position: absolute;
+    top: -45px;
+    left: 30px;
+    color: #fff;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+
+.container.weak .strengthMeter::after {
+    content: 'Your Password is Weak';
+    color: #f00;
+    filter: drop-shadow(0 0 5px #f00) ;
+    -webkit-filter: drop-shadow(0 0 5px #f00) ;
+}
+
+.container.medium .strengthMeter::after {
+    content: 'Your Password is medium';
+    color: #ffa500;
+    filter: drop-shadow(0 0 5px #ffa500) ;
+    -webkit-filter: drop-shadow(0 0 5px #ffa500) ;
+}
+
+
+.container.strong .strengthMeter::after {
+    content: 'Your Password is strong';
+    color: #0f0;
+    filter: drop-shadow(0 0 5px #0f0) ;
+    -webkit-filter: drop-shadow(0 0 5px #0f0) ;
+}
+
+
 .show {
     position: absolute;
     width: 60px;
